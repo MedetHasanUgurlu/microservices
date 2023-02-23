@@ -1,4 +1,4 @@
-package net.javaguides.departmentservice.entity;
+package net.javaguides.employeeservice.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,14 +10,16 @@ import lombok.*;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
 @Builder
-public class Department {
+@Entity
+public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String departmentName;
+    private String firstName;
+    private String lastName;
+    private String email;
     private String departmentCode;
-    private String departmentDescription;
+
 
 }

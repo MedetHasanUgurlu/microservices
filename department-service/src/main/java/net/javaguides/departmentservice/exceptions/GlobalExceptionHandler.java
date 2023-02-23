@@ -29,8 +29,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         ErrorDetails errorDetails = new ErrorDetails(
                 LocalDateTime.now(),
                 exception.getMessage(),
-                webRequest.getDescription(false),
-                "INTERNAL SERVER ERROR"
+                webRequest.getDescription(true),
+                "BAD REQUEST"
         );
         return new ResponseEntity<>(errorDetails,HttpStatus.BAD_REQUEST);
     }

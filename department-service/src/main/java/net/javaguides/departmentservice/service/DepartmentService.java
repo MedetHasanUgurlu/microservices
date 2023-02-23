@@ -1,14 +1,14 @@
 package net.javaguides.departmentservice.service;
 
 import net.javaguides.departmentservice.dto.DepartmentDto;
-import org.springframework.http.ResponseEntity;
-
+import java.util.List;
 import java.util.Optional;
 
 public interface DepartmentService {
     void createDepartment(DepartmentDto departmentDto);
-    ResponseEntity<DepartmentDto> getDepartmentById(Long id);
-    ResponseEntity<DepartmentDto> getDepartmentByCode(String code);
-    ResponseEntity<DepartmentDto> updateDepartment(Optional<DepartmentDto> departmentDto);
+    DepartmentDto getDepartmentById(Long id);
+    DepartmentDto getDepartmentByCode(String code);
+   DepartmentDto updateDepartment(Optional<DepartmentDto> departmentDto);
     void deleteDepartment(Long id);
+    List<DepartmentDto> getAllDepartments();
 }
