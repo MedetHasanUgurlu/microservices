@@ -1,0 +1,13 @@
+
+f
+java:S3655/"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(„¼ÕŒ
+—
+java:S1186B"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ú‘ã‚
+Q	java:S125"<This block of commented-out lines of code should be removed.(»ÿîØ
+Q	java:S1250"<This block of commented-out lines of code should be removed.(ìÕýÕ
+q
+java:S1128"TRemove this unused import 'net.javaguides.employeeservice.constants.ErrorConstants'.(ð·à‘8Õæéç0
+s
+java:S1128"QRemove this unused import 'net.javaguides.employeeservice.util.RestTemplateBean'.(õû¶Ôøÿÿÿÿ8ŽÕæéç0
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8ŽÕæéç0

@@ -1,0 +1,18 @@
+
+”
+java:S1192"~Define a constant instead of duplicating this literal "Information Technology department stands for innovating life." 4 times.(™ó­°
+r
+java:S1192"WDefine a constant instead of duplicating this literal "Information Technology" 3 times.(ÏôÑèúÿÿÿÿ
+W
+java:S2209"5Change this instance-reference to a static reference.(†÷ğŸüÿÿÿÿ8åƒÅÎç0
+R
+java:S2209"5Change this instance-reference to a static reference.(„ü—€8ìƒÅÎç0
+W
+java:S2209"5Change this instance-reference to a static reference.(Ú¿½¶úÿÿÿÿ8òƒÅÎç0
+W
+java:S2209""5Change this instance-reference to a static reference.(şóôÉùÿÿÿÿ8öƒÅÎç0
+M
+java:S1128	"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ıƒÅÎç0
+M
+java:S1128
+"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8şƒÅÎç0

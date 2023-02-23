@@ -23,7 +23,7 @@ public class DepartmentControllerImp implements DepartmentController {
     @PostMapping
     public ResponseEntity createDepartment(@RequestBody @Valid DepartmentDto departmentDto) {
         service.createDepartment(departmentDto);
-        return new ResponseEntity(HttpStatus.CREATED);
+        return new ResponseEntity<>(HttpStatus.CREATED);
     }
 
     @Override

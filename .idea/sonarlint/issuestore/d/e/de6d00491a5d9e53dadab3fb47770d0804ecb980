@@ -1,0 +1,9 @@
+
+p
+java:S3655;"ZCall "departmentDto.isPresent()" or "!departmentDto.isEmpty()" before accessing the value.(íÆ¾ß
+k
+java:S36555"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(€Û´¢þÿÿÿÿ
+k
+java:S3655,"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(˜ÕŽñøÿÿÿÿ
+G
+java:S1602N",Remove useless curly braces around statement(›‹ÍÁüÿÿÿÿ
