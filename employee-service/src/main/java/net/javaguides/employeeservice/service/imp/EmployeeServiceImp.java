@@ -8,6 +8,7 @@ import net.javaguides.employeeservice.dto.EmployeeDto;
 import net.javaguides.employeeservice.entity.Employee;
 import net.javaguides.employeeservice.exceptions.exception.ResourceNotFoundException;
 import net.javaguides.employeeservice.repository.EmployeeRepository;
+import net.javaguides.employeeservice.service.APIClient;
 import net.javaguides.employeeservice.service.EmployeeService;
 import net.javaguides.employeeservice.util.ModelMapperBean;
 import net.javaguides.employeeservice.util.RestTemplateBean;
@@ -23,7 +24,8 @@ public class EmployeeServiceImp implements EmployeeService {
 
     private final ModelMapperBean modelMapperBean;
     private final EmployeeRepository repository;
-    private final RestTemplateBean restTemplateBean;
+    //private final RestTemplateBean restTemplateBean;
+    private final APIClient apiClient;
 
     EmployeeDto entityToDto(Employee employee){
         return modelMapperBean.getModelMapper().map(employee,EmployeeDto.class);
@@ -43,9 +45,10 @@ public class EmployeeServiceImp implements EmployeeService {
             throw new ResourceNotFoundException("Employee not found.");
         }
         EmployeeDto employeeDto = entityToDto(repository.findById(id).get());
-        ResponseEntity<DepartmentDto> responseEntity = restTemplateBean.getRestTemplate().getForEntity("http://localhost:8080/department/param?code="+employeeDto.getDepartmentCode(),DepartmentDto.class );
+        //ResponseEntity<DepartmentDto> responseEntity = restTemplateBean.getRestTemplate().getForEntity("http://localhost:8080/department/param?code="+employeeDto.getDepartmentCode(),DepartmentDto.class );
+        DepartmentDto departmentDto = apiClient.getDepartmentByCode(employeeDto.getDepartmentCode());
         return APIResponseDto.builder()
-                .departmentDto(responseEntity.getBody())
+                .departmentDto(departmentDto)
                 .employeeDto(employeeDto)
                 .build();
     }
