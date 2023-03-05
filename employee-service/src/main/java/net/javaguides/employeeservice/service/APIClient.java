@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 //For Load Balancing we should use service name.
 //@FeignClient("DEPARTMENT-SERVICE")
 //@FeignClient(url = URLPathConstant.DEPARTMENT_SERVICE1, value = "DEPARTMENT-SERVICE")
-@FeignClient(name = "DE")
+@FeignClient(url = URLPathConstant.DEPARTMENT_SERVICE1, value = "DEPARTMENT-SERVICE")
 public interface APIClient {
 
     @GetMapping("/param")
